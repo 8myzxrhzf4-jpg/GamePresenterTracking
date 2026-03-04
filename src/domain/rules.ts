@@ -1,5 +1,5 @@
 import { addDays, differenceInCalendarDays, parse, isValid } from "date-fns";
-import { TrainingRow, MonthlyPayout, TicketRow } from "../store";
+import type { TrainingRow, MonthlyPayout, TicketRow } from "../store";
 
 const COACHING_TYPES = ["misscan", "extra card related mistakes", "many mistake makers", "spin technique"];
 
