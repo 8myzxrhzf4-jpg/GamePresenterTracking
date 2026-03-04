@@ -1,5 +1,5 @@
 import { addDays, parse, isValid } from "date-fns";
-import { MonthlyPayout, TrainingRow } from "../store";
+import type { MonthlyPayout, TrainingRow } from "../store";
 
 function parseTrainingDate(input: string): Date | null { const d = parse(input, "dd.MM.yyyy", new Date()); return isValid(d) ? d : null; }
 function hireDateFromDaysWorked(daysWorked: number | null): Date | null { if (daysWorked == null) return null; return addDays(new Date(), -daysWorked); }
